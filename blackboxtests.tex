@@ -1,0 +1,110 @@
+\documentclass[mathserif]{beamer}
+% \usetheme{Berkeley}
+\usetheme{Goettingen}
+% \usetheme{Boadilla}
+%============================================================
+% Pakete
+%============================================================
+
+%Schriftkodierung
+\usepackage[T1]{fontenc} % sehr nützlich, Eingabe von Zeichen und so, vor inputenc
+\usepackage[utf8]{inputenc} % sehr nützlich, Eingabe von Zeichen und so
+\usepackage[ngerman,english]{babel} % sehr nützlich, deutsches Wörterbuch, neu Rechtschreibung, deutsche Silbentrennung, etc.
+\usepackage{amsmath,amssymb,bm,amsfonts} % sehr nützlich, Mathe-Formeln
+%\usepackage{tabls} %optional, mehr Funktionen für Tabellen
+% \usepackage{pslatex} %ps-Schriften einbinden - Andere Schriftart?
+%\usepackage{dsfont}
+% \usepackage{bbold}
+%\usepackage{fancyhdr} %Header selbst gestalten, siehe: http://www.andy-roberts.net/misc/latex/latextutorial8.html
+% \usepackage{pdfpages}
+% Grafiken einbinden
+\usepackage{epstopdf}
+\usepackage{graphicx} %optional, Bilder einbinden, nicht ganz intuitiv, hier gibt's erklärungen: http://userpage.fu-berlin.de/mh090188/Latex-Skript.pdf
+% \usefonttheme{serif}
+% \usepackage{helvet}
+\usepackage{perpage}
+\MakePerPage{footnote}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{listings}
+
+\usepackage{pifont}
+\usepackage{calc}
+\usepackage{rotating}
+% \usepackage{tcolorbox}
+\usepackage{multirow}
+\usepackage{soul}
+
+\usepackage{colortbl}
+
+\definecolor{mydarkgrey}{rgb}{0.45,0.45,0.45}
+\newcommand<>{\dgrey}{\color#1{mydarkgrey}}
+
+
+\newenvironment{alphafootnotes}
+{\par\edef\savedfootnotenumber{\number\value{footnote}}
+	\renewcommand{\thefootnote}{$\star$}
+	\setcounter{footnote}{0}}
+{\par\setcounter{footnote}{\savedfootnotenumber}}
+
+
+
+\title[Black-Box-Tests] % (optional, only for long titles)
+{Black-Box-Tests}
+\subtitle{}
+\author[Große, Neugebauer, Leschke:\\
+OSZ IMT] % (optional, for multiple authors)
+{Michael~Große\inst{1}\footnote[frame]{\href{mailto:mic.grosse+fa35@googlemail.com}{mic.grosse+fa35@googlemail.com}}\\Judith~Neugebauer\inst{1}\\Philip~Leschke\inst{1}}
+\institute[OSZ IMT] % (optional)
+{
+	\inst{1}%
+	Oberstufenzentrum Informations- und Medizintechnik
+}
+\titlegraphic{\includegraphics[width=5cm]{logo}}
+\subject{MS SQL}
+\usepackage{DejaVuSansMono}
+
+\setbeamertemplate{footline}[frame number]
+
+\begin{document}
+\begin{frame}
+	\begin{alphafootnotes}
+		\titlepage
+	\end{alphafootnotes}
+	
+\end{frame}
+
+
+\begin{frame}
+	\tableofcontents
+\end{frame}
+
+\section{Definition}
+\begin{frame}[fragile]{Definition}
+\end{frame}
+
+\section{Testfallauswahl}
+\begin{frame}[fragile]{Testfallauswahl}
+	\begin{itemize}
+		\item Äquivalenzklassen
+		\item Grenzwertanalyse
+		\item Ursache-Effekt-Graph
+	\end{itemize}
+\end{frame}
+
+\subsection{Äquivalenzklassen}
+\begin{frame}[fragile]{assert}
+\end{frame}
+
+\section{verlängereAusweis}
+\begin{frame}
+        
+\end{frame}
+
+\begin{frame}[fragile]{assert}
+\end{frame}
+
+
+
+
+\end{document}
